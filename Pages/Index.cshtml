@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please vote for a dinner choice for our next in-person team meeting.</p>
+
+
+    <div style="text-align: left">
+        <p><b>Team Dinner - Vote for a cuisine</b></p>
+            <ol type="A">
+               <li><a href="/vote?id=cuisine-Barbecue">Barbecue</a></li>
+               <li><a href="/vote?id=cuisine-Cajun">Cajun</a></li>
+               <li><a href="/vote?id=cuisine-Italian">Italian</a></li>
+               <li><a href="/vote?id=cuisine-Japanese">Japanese</a></li>
+               <li><a href="/vote?id=cuisine-Mexican">Mexican</a></li>
+               <li><a href="/vote?id=cuisine-Thai">Thai</a></li>
+            </ol>
+            <br/>
+            <p><a href="Votes">See Votes</a></p>
+        </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@page
+@model VotesModel
+@{
+    ViewData["Title"] = "Voting Results";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Voting Results</h1>
+    <p>Here are the voting results.</p>
+    <p>@Model.Message</p>
+
+    <div style="text-align: left">
+        <p><b>Team Dinner - cuisine</b></p>
+        <table>
+            <thead>
+                <tr><th>Cuisine</th><th>Votes</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Barbecue</td><td>@Model.VotesBarbecue</td></tr>
+                <tr><td>Cajun</td><td>@Model.VotesCajun</td></tr>
+                <tr><td>Italian</td><td>@Model.VotesItalian</td></tr>
+                <tr><td>Japanese</td><td>@Model.VotesJapanese</td></tr>
+                <tr><td>Mexican</td><td>@Model.VotesMexican</td></tr>
+                <tr><td>Thai</td><td>@Model.VotesThai</td></tr>
+            </tbody>
+        </table>
+        <br/>
+            <p><a href="Votes?reset=1">Reset votes</a></p>
+    </div>
+</div>
